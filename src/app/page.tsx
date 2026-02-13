@@ -44,7 +44,7 @@ export default function Home() {
         );
         const data = await response.json();
         setWeather(data);
-      } catch (err) {
+      } catch (_err) {
         setError("Failed to fetch weather data");
       } finally {
         setLoading(false);
